@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>CSS Sprite Animation</title>
+  <style>
+    body {
+      padding: 30px;
+    }
+ 
+    #spriteContainer {
+      width: 300px;
+      height: 300px;
+      display: block;
+      background-image: url("https://image.freepik.com/free-vector/cute-bears-jumping-scene_1308-28181.jpg");
+      animation: sprite .75s steps(10) infinite;
+    }
+ 
+    @keyframes sprite {
+     100% {
+       background-position: -7224px;
+     }
+    }
+  </style>
+   <script>
+  
+
+setTimeout("document.bgColor='white'", 1000)
+setTimeout("document.bgColor='lightpink'", 1500)
+setTimeout("document.bgColor = 'pink'", 2000)
+setTimeout("document.bgColor =  'deeppink'", 2500)
+setTimeout("document.bgColor = 'red'", 3000)
+setTimeout("document.bgColor = 'tomato'", 3500)
+setTimeout("document.bgColor = 'blue'", 4000)
+</script>
+</head>
+ 
+<body>
+  <div id=spriteContainer></div>
+ 
+  <script src="/js/prefixfree.min.js"></script>
+</body>
+ 
+</html>
